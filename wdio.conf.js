@@ -1,19 +1,19 @@
-export const config = {
+exports.config = {
     runner: 'local',
     port: 4723,
     host: 'localhost',
     path: '/wd/hub',
-    logLevel: 'info',
+    loglevel: 'info',
     framework: 'mocha',
-    mochaOpts: {
+    mochaOpts:{
         ui: 'bdd',
-        require: '@babel/register',
-        timeout: 60000
+        require:['@babel/register'],
+        timeout: 600000
     },
-
     maxInstances: 1,
-    sync: 'true',
-    specs: [
-        'tests/spec/**'
+    sync: true, 
+    specs:[
+        './test/spec/playwithmocha.js'
     ]
+
 }
