@@ -10,6 +10,16 @@ exports.config = {
         require:['@babel/register'],
         timeout: 600000
     },
+
+    capabilities:[{
+        
+            "platformName": "iOS",
+            "platformVersion": "14.5",
+            "deviceName": "iPhone 12 Pro Max",
+            "automationName": "XCUITest",
+            "app": "/Users/vijaychitragar/Vijay G C/Automation/WebdriverIO-Appium/resources/wdioNativeDemoApp.app"
+        
+    }],
     maxInstances: 1,
     sync: true, 
     specs:[
