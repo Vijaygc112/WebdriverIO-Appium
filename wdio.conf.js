@@ -1,6 +1,5 @@
 exports.config = {
     runner: 'local',
-    port: 4723,
     host: 'localhost',
     path: '/wd/hub',
     loglevel: 'info',
@@ -10,6 +9,8 @@ exports.config = {
         require:['@babel/register'],
         timeout: 600000
     },
+    port: 4723,
+    services: ['appium'],
 
     capabilities:[{
         
