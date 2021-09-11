@@ -1,7 +1,6 @@
 exports.config = {
     runner: 'local',
     host: 'localhost',
-    path: '/wd/hub',
     loglevel: 'info',
     framework: 'mocha',
     mochaOpts:{
@@ -9,9 +8,12 @@ exports.config = {
         require:['@babel/register'],
         timeout: 600000
     },
-    port: 4723,
-    services: ['appium'],
-
+    path: '/wd/hub',
+    port: 4725,
+    services: [['appium', { 
+                    command: 'appium' 
+                }]
+            ],
     capabilities:[{
         
             "platformName": "iOS",
