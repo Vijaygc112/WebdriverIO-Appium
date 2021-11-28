@@ -4,7 +4,7 @@
   "description": "Trial Project for WebdriverIO with Appium",
   "main": "index.js",
   "scripts": {
-    "test": "wdio"
+    "test": "npx wdio run"
   },
   "author": "Vijay Chitragar",
   "license": "ISC",
